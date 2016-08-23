@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+    <p>
+        This is ejs
+    </p>
+
+    <script>
+        var server = new WebSocket("ws://127.0.0.1:9001");
+
+        server.send('message', 'hi');
+    </script>
+</body>
+</html>
